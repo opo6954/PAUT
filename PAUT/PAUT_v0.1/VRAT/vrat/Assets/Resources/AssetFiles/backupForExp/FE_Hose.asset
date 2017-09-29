@@ -1,0 +1,17 @@
+<ASSET name="FE_Hose">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>-1835.783</x>
+        <y>1.014999</y>
+        <z>0.5760002</z>
+      </Position>
+      <Rotation>
+        <x>-1.540408E-06</x>
+        <y>180</y>
+        <z>145</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

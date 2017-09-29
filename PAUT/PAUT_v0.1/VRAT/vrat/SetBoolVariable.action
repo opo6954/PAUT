@@ -1,0 +1,10 @@
+<vrat.ActionPrimitivesTemplate name="SetBoolVariable" type="ActionPrimitivesTemplate">
+  <PairwiseAsset name="OwnedAssetName" type="STRING" contents="" />
+  <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+  <CustomizedProperty>
+    <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+      <vrat.PrimitiveXmlTemplate name="VariableName" type="STRING" contents="" />
+      <vrat.PrimitiveXmlTemplate name="Threshold" type="BOOL" contents="true" />
+    </vrat.ListOfXmlTemplate>
+  </CustomizedProperty>
+</vrat.ActionPrimitivesTemplate>

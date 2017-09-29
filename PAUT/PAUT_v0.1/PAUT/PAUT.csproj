@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20E36715-E84D-CD76-1D54-A0E4B890456E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.6.3p1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Shared\Scripts\HideMouse.cs" />
+    <Compile Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Shared\Scripts\Showcase\DemoSwitcher.cs" />
+    <Compile Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Shared\Scripts\flicker.cs" />
+    <Compile Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ColliderEvent\ColliderEventCaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ColliderEvent\ColliderEventData.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ColliderEvent\ColliderEventInterfaces.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ColliderEvent\ExecuteColliderEvents.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\Pointer3DEventData.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\Pointer3DInputModule.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaySegmentGenerator\Base\BaseRaySegmentGenerator.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaySegmentGenerator\Base\IRaySegmentGenerator.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaySegmentGenerator\DefaultGenerator.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaySegmentGenerator\ProjectileGenerator.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaySegmentGenerator\ProjectionGenerator.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\Base\BaseRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\Base\IRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\CanvasRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\CanvasRaycastTarget.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\GraphicRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\Physics2DRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\RaycastMethod\PhysicsRaycastMethod.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\Raycaster\Base\BaseFallbackCamRaycaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\Raycaster\Base\BaseMultiMethodRaycaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\Raycaster\Pointer3DRaycaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\StandaloneRaycaster\StandaloneEventData.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Pointer3D\StandaloneRaycaster\StandaloneRaycaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\Base\BasePoseModifier.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\Base\BasePoseTracker.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\Base\IPoseModifier.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\Base\IPoseTracker.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\Pose.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\PoseModifiers\PoseEaser.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\PoseModifiers\PoseFreezer.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\PoseModifiers\PoseStablizer.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\PoseTracker\PoseTracker.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\ChangeProp.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\Container\IndexedSet.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\Container\IndexedTable.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\Container\OrderedIndexedSet.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\Container\OrderedIndexedTable.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\ContainerPool\DictionaryPool.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\ContainerPool\IndexedSetPool.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\ContainerPool\ListPool.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\ContainerPool\ObjectPool.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\Utility\FlagsFromEnumAttribute.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\2.2DDragDrop\Scripts\DragImage.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\2.2DDragDrop\Scripts\DropImage.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\3.3DDrag\Scripts\Draggable.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\3.3DDrag\Scripts\PlayGroundManager.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\4.Teleport\Scripts\ImageAlphaRaycastFilter.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\5.ColliderEvent\Scripts\GravitySwitch.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\5.ColliderEvent\Scripts\ResetButton.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\6.ControllerManagerSample\Scripts\ChangeMaterialToButtonsColor.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\6.ControllerManagerSample\Scripts\ShowMenuOnClick.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\6.ControllerManagerSample\Scripts\SpawnObjectOnTriggerExit.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\DeviceInfoUIController.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\DeviceScanner.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\MappingItemUIController.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\RoleMapStatusUIController.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\SaveLoadBindingsUIController.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Examples\7.RoleBindingExample\Scripts\ToggleButtonUIController.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\BasicGrabbable.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\ControllerManagerSample.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\ExternalCameraHook.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\GuideLineDrawer.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\MaterialChanger.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\OverlayKeyboardSample.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\RenderModelHook.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\ReticlePoser.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\Teleportable.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\ViveRoleBindingsHelper.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveColliderEvent\ViveColliderEventCaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveColliderEvent\ViveColliderEventData.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveInput\ControllerState.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveInput\ViveInput.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveInput\ViveInputStatic.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\VivePose\VivePose.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\VivePose\VivePoseGet.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\VivePose\VivePoseTracker.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\VivePose\ViveRigidPoseTracker.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRaycaster\VivePointerEventData.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRaycaster\ViveRaycaster.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\RoleMaps\BodyRole.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\RoleMaps\DeviceRole.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\RoleMaps\HandRole.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\RoleMaps\TrackerRole.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRole.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleEnum.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleMap.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleMapHandler.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleProperty.cs" />
+    <Compile Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleSetter.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\Resources\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\AutoCam.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneController.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplanePropellerAnimator.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+    <Compile Include="Assets\Resources\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_GazeTracker.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_LaserPointer.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_Teleporter.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_TestThrow.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Extras\SteamVR_TrackedController.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\CircularDrive.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\ComplexThrowable.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\CustomEvents.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DebugUI.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DestroyOnTriggerEnter.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DistanceHaptics.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\EnumFlags.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\IgnoreHovering.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\InputModule.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\InteractableButtonEvents.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\InteractableHoverEvents.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\ItemPackage.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\ItemPackageSpawner.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearAnimation.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearAnimator.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearAudioPitch.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearBlendshape.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Player.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SoundPlayOneshot.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachAfterControllerIsTracking.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachToHand.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\SpawnRenderModel.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\ArrowheadRotation.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\BalloonHapticBump.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\BalloonSpawner.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\ExplosionWobble.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\FireSource.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\Longbow.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Samples\Scripts\InteractableExample.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArea.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs" />
+    <Compile Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Plugins\openvr_api.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Camera.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_CameraMask.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Controller.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_ControllerManager.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Ears.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Events.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_ExternalCamera.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Fade.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Frustum.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_GameView.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_IK.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_LoadLevel.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Menu.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Overlay.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_PlayArea.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Render.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_RenderModel.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Skybox.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Stats.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_TestController.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
+    <Compile Include="Assets\Resources\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableAsset.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableAssetGroup.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableEvent.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableEventGroup.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableRoom.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableScenario.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\AuthorableTimeline.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\ActionPrimitivesTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\AssetTriggerXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\ClassNameXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\InstPrimitivesTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\ListOfXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\LocationXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\NullXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\PAUTPrimitivesTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\PrimitiveXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\TriggerPrimitivesTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\VariableXmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\AuthorableClass\XmlTemplate\XmlTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\AssetGroupTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\AssetTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\effect\EffectTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\effect\LockScreenEffect.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\trigger\ActTriggerTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\trigger\ApproachTrigger.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\trigger\DetectInSightTrigger.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\trigger\HoldTriggerTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Asset\trigger\TriggerTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Event\EventGroupTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Event\EventTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Event\endCondition\EndConditionTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Player\PlayerTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ExecutableClass\Player\RoleInfoTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ObjectTemplate.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ToolsDesign\AuthoringTest.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ToolsDesign\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ToolsDesign\FileBrowser.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ToolsDesign\FileFinder.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\ToolsDesign\GUILayoutx.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\AIM_Script\exampleTestScenario.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\POAPAUT.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\POAPAUTCOMPLETE.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_PAUT\POAPAUTRAW.cs" />
+    <Compile Include="Assets\Scripts\Experiment\POA_Unity\POAUnity.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Action.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Arrangeable.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Asset.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\AssetGroup.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\AssetProperty\AssetProperty.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Event.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\EventGroup.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Input\Hand.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Input\InputMapping.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Input\ViveInputController.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Instruction.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\ObjectTemplate.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Placable.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Player.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\SharedInfo.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\NodeBasedEditor\Connection.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\NodeBasedEditor\ConnectionPoint.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\NodeBasedEditor\Node.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\NodeBasedEditor\NodeBasedEditor.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\Scenario.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Timeline\Timeline.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Transition\Transition.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Transition\TriggerInput.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Trigger\AssetTrigger.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\Trigger\Trigger.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Core\TriggerParam\TriggerParam.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Example\ClosedAreaDemo.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Example\TestDemo.cs" />
+    <Compile Include="Assets\Scripts\PAUT\GUI\CustomInspector\TransitionEditor.cs" />
+    <Compile Include="Assets\Scripts\PAUT\GUI\TextVisualizer.cs" />
+    <Compile Include="Assets\Scripts\PAUT\GUI\TimelineWindow\TimelineWindow.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Util\FloatingCanvas.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Util\RandomSound.cs" />
+    <Compile Include="Assets\Scripts\PAUT\Util\VRRigidbodyFirstPersonController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\READ_ME_FOR_SOFT_PARTICLES (Pro Only)!!!.txt" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\ReadMe_Volume_1.txt" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Resources\3DModel\POA\Ultra_Real_Fire_Effects\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\Scripts\Misc\Resources\Unlit-AlphaWithFade.shader" />
+    <None Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\changelog.txt" />
+    <None Include="Assets\Resources\HTC.UnityPlugin\ViveInputUtility\readme.txt" />
+    <None Include="Assets\Resources\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\Resources\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\ImageEffects\Readme.txt" />
+    <None Include="Assets\Resources\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\Resources\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\Resources\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\Resources\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Resources\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Resources\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\Resources\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Resources\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\Resources\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Resources\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Resources\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\Resources\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+    <None Include="Assets\Resources\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+    <None Include="Assets\Resources\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+    <None Include="Assets\Resources\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+    <None Include="Assets\Resources\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\Resources\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+    <None Include="Assets\Resources\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+    <None Include="Assets\Resources\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+    <None Include="Assets\Resources\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+    <None Include="Assets\Resources\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+    <None Include="Assets\Resources\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+    <None Include="Assets\Resources\SteamVR\Resources\SteamVR_ClearAll.shader" />
+    <None Include="Assets\Resources\SteamVR\Resources\SteamVR_ColorOut.shader" />
+    <None Include="Assets\Resources\SteamVR\Resources\SteamVR_Fade.shader" />
+    <None Include="Assets\Resources\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+    <None Include="Assets\Resources\SteamVR\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

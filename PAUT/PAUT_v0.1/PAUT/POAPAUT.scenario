@@ -1,0 +1,270 @@
+<SCENARIO name="FireExtinguisherTraining">
+  <CustomizedProperty>
+    <vrat.ListOfXmlTemplate name="TraineeRoleInfo" type="ListOfXmlTemplate" idx="0">
+      <vrat.PrimitiveXmlTemplate name="Role1" type="string" contents="Captain" />
+      <vrat.PrimitiveXmlTemplate name="Role2" type="string" contents="Sailor1" />
+    </vrat.ListOfXmlTemplate>
+    <vrat.ListOfXmlTemplate name="TrainCondition" type="ListOfXmlTemplate" idx="0">
+      <vrat.PrimitiveXmlTemplate name="Platform1" type="string" contents="VR" />
+      <vrat.PrimitiveXmlTemplate name="Platform2" type="string" contents="AR" />
+      <vrat.PrimitiveXmlTemplate name="Platform3" type="string" contents="Desktop" />
+    </vrat.ListOfXmlTemplate>
+  </CustomizedProperty>
+  <RoomList name="RoomList" />
+  <AssetList name="AssetList">
+    <ASSET name="FE">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+        <vrat.LocationXmlTemplate name="Location" type="location">
+          <Position>
+            <x>-1826</x>
+            <y>2.389999</y>
+            <z>12.43</z>
+          </Position>
+          <Rotation>
+            <x>270</x>
+            <y>235</y>
+            <z>0</z>
+          </Rotation>
+        </vrat.LocationXmlTemplate>
+      </CustomizedProperty>
+    </ASSET>
+    <ASSET name="FE_Effect">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+        <vrat.LocationXmlTemplate name="Location" type="location">
+          <Position>
+            <x>-1835.763</x>
+            <y>-0.1230011</y>
+            <z>-0.0320015</z>
+          </Position>
+          <Rotation>
+            <x>25.50201</x>
+            <y>-5.025285E-07</y>
+            <z>359.184</z>
+          </Rotation>
+        </vrat.LocationXmlTemplate>
+      </CustomizedProperty>
+    </ASSET>
+    <ASSET name="FE_Hose">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+        <vrat.LocationXmlTemplate name="Location" type="location">
+          <Position>
+            <x>-1835.783</x>
+            <y>1.014999</y>
+            <z>0.5760002</z>
+          </Position>
+          <Rotation>
+            <x>-1.540408E-06</x>
+            <y>180</y>
+            <z>145</z>
+          </Rotation>
+        </vrat.LocationXmlTemplate>
+        <vrat.AssetTriggerXmlTemplate name="" type="">
+          <TriggerType name="TriggerType" type="STRING" triggerType="InputHoldParam" triggerCondition="11" triggerOperator="1" triggerParamStr="InputMapping.InputIndex.INPUT1" triggerParamFloat="0" />
+          <ActionList>
+            <ActionElement name="ActionType" type="STRING" actionType="DecreaseFloatVariable" attachedAsset="Fire" actionParamStr="HP" actionParamTh="50" />
+          </ActionList>
+        </vrat.AssetTriggerXmlTemplate>
+        <vrat.AssetTriggerXmlTemplate name="" type="">
+          <TriggerType name="TriggerType" type="STRING" triggerType="InputUpParam" triggerCondition="12" triggerOperator="1" triggerParamStr="InputMapping.InputIndex.INPUT1" triggerParamFloat="0"/>
+          <ActionList>
+            <ActionElement name="ActionType" type="STRING" actionType="StopParticle" attachedAsset="FE_Effect" actionParamStr="" actionParamTh="" />
+          </ActionList>
+        </vrat.AssetTriggerXmlTemplate>
+      </CustomizedProperty>
+    </ASSET>
+    <ASSET name="Fire">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="false" />
+        <vrat.LocationXmlTemplate name="Location" type="location">
+          <Position>
+            <x>-2450</x>
+            <y>115</y>
+            <z>12.32</z>
+          </Position>
+          <Rotation>
+            <x>0</x>
+            <y>315</y>
+            <z>0</z>
+          </Rotation>
+        </vrat.LocationXmlTemplate>
+        <vrat.VariableXmlTemplate name="HP" type="float" value="1000"/>
+        <vrat.VariableXmlTemplate name="isDetected" type="bool" value="false" />
+        <vrat.AssetTriggerXmlTemplate name="" type="">
+          <TriggerType name="TriggerType" type="STRING" triggerType="GazeEnterParam" triggerCondition="6" triggerOperator="0" triggerParamStr="" triggerParamFloat="0"/>
+          <ActionList>
+            <ActionElement name="ActionType" type="STRING" actionType="SetBoolVariable" attachedAsset="Fire" actionParamStr="isDetected" actionParamTh="true" />
+          </ActionList>
+        </vrat.AssetTriggerXmlTemplate>
+        <vrat.AssetTriggerXmlTemplate name="" type="">
+          <TriggerType name="TriggerType" type="STRING" triggerType="MonitorFloatVariableParam" triggerCondition="5" triggerOperator="3" triggerParamStr="HP" triggerParamFloat="0" />
+          <ActionList>
+            <ActionElement name="ActionType" type="STRING" actionType="DeactiveRender" attachedAsset="Fire" actionParamStr="" actionParamTh="" />
+          </ActionList>
+        </vrat.AssetTriggerXmlTemplate>
+      </CustomizedProperty>
+    </ASSET>
+    <ASSET name="Phone">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="false" />
+        <vrat.LocationXmlTemplate name="Location" type="location">
+          <Position>
+            <x>1025.044</x>
+            <y>-35.68508</y>
+            <z>-93</z>
+          </Position>
+          <Rotation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </Rotation>
+        </vrat.LocationXmlTemplate>
+      </CustomizedProperty>
+    </ASSET>
+  </AssetList>
+  <TimelineList name="TimelineList">
+    <TIMELINE name="">
+      <CustomizedProperty>
+        <vrat.PrimitiveXmlTemplate name="Player" type="string" contents="Sailor" />
+      </CustomizedProperty>
+      <EventList name="EventList">
+        <EVENT name="event 0">
+          <CustomizedProperty>
+            <vrat.PrimitiveXmlTemplate name="AttachedAsset" type="string" contents="" />
+            <vrat.TriggerPrimitivesTemplate name="MonitorBooleanVariableParam" type="TriggerPrimitivesTemplate">
+              <PairwiseAsset name="OwnedAssetName" type="STRING" contents="Fire" />
+              <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+              <CustomizedProperty>
+                <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                  <vrat.ListOfXmlTemplate name="TriggerType" type="CHOICE" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="TriggerType0" type="STRING" contents="MonitorValueCaptured" />
+                  </vrat.ListOfXmlTemplate>
+                  <vrat.PrimitiveXmlTemplate name="Threshold" type="BOOL" contents="True" />
+                  <vrat.PrimitiveXmlTemplate name="VariableName" type="STRING" contents="isDetected" />
+                </vrat.ListOfXmlTemplate>
+              </CustomizedProperty>
+            </vrat.TriggerPrimitivesTemplate>
+            <vrat.ListOfXmlTemplate name="BeforeActionList" type="ListOfXmlTemplate" idx="0">
+              <vrat.ActionPrimitivesTemplate name="EnableAssetTriggerAction" type="ActionPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="Fire" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0" />
+                </CustomizedProperty>
+              </vrat.ActionPrimitivesTemplate>
+            </vrat.ListOfXmlTemplate>
+            <vrat.ListOfXmlTemplate name="AfterActionList" type="ListOfXmlTemplate" idx="0" />
+            <vrat.ListOfXmlTemplate name="InstructionList" type="ListOfXmlTemplate" idx="0">
+              <vrat.InstPrimitivesTemplate name="Instruction" type="InstPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="Fire" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="Instruction" type="STRING" contents="공간을 순찰하며 내부의 상황을 확인하십시오." />
+                    <vrat.PrimitiveXmlTemplate name="IsGlobalOrLocal" type="BOOL" contents="True" />
+                  </vrat.ListOfXmlTemplate>
+                </CustomizedProperty>
+              </vrat.InstPrimitivesTemplate>
+            </vrat.ListOfXmlTemplate>
+            <vrat.PrimitiveXmlTemplate name="OwnPlayer" type="string" contents="" />
+          </CustomizedProperty>
+        </EVENT>
+        <EVENT name="event 1">
+          <CustomizedProperty>
+            <vrat.PrimitiveXmlTemplate name="AttachedAsset" type="string" contents="" />
+            <vrat.TriggerPrimitivesTemplate name="MonitorDistanceParam" type="TriggerPrimitivesTemplate">
+              <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE" />
+              <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+              <CustomizedProperty>
+                <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                  <vrat.ListOfXmlTemplate name="TriggerType" type="CHOICE" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="TriggerType0" type="STRING" contents="MonitorValueCaptured" />
+                  </vrat.ListOfXmlTemplate>
+                  <vrat.ListOfXmlTemplate name="TriggerOperator" type="CHOICE" idx="4">
+                    <vrat.PrimitiveXmlTemplate name="TriggerOperator0" type="STRING" contents="Larger" />
+                    <vrat.PrimitiveXmlTemplate name="TriggerOperator1" type="STRING" contents="LargerOrEqual" />
+                    <vrat.PrimitiveXmlTemplate name="TriggerOperator2" type="STRING" contents="Equal" />
+                    <vrat.PrimitiveXmlTemplate name="TriggerOperator3" type="STRING" contents="SmallerOrEqual" />
+                    <vrat.PrimitiveXmlTemplate name="TriggerOperator4" type="STRING" contents="Smaller" />
+                  </vrat.ListOfXmlTemplate>
+                  <vrat.PrimitiveXmlTemplate name="Threshold" type="FLOAT" contents="3" />
+                </vrat.ListOfXmlTemplate>
+              </CustomizedProperty>
+            </vrat.TriggerPrimitivesTemplate>
+            <vrat.ListOfXmlTemplate name="BeforeActionList" type="ListOfXmlTemplate" idx="0" />
+            <vrat.ListOfXmlTemplate name="AfterActionList" type="ListOfXmlTemplate" idx="0" />
+            <vrat.ListOfXmlTemplate name="InstructionList" type="ListOfXmlTemplate" idx="0">
+              <vrat.InstPrimitivesTemplate name="Instruction" type="InstPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="Instruction" type="STRING" contents="화재가 발견되었습니다. 소화기가 있는 위치로 이동하세요." />
+                    <vrat.PrimitiveXmlTemplate name="IsGlobalOrLocal" type="BOOL" contents="True" />
+                  </vrat.ListOfXmlTemplate>
+                </CustomizedProperty>
+              </vrat.InstPrimitivesTemplate>
+            </vrat.ListOfXmlTemplate>
+            <vrat.PrimitiveXmlTemplate name="OwnPlayer" type="string" contents="" />
+          </CustomizedProperty>
+        </EVENT>
+        <EVENT name="event 2">
+          <CustomizedProperty>
+            <vrat.PrimitiveXmlTemplate name="AttachedAsset" type="string" contents="" />
+            <vrat.TriggerPrimitivesTemplate name="InputDownParam" type="TriggerPrimitivesTemplate">
+              <PairwiseAsset name="OwnedAssetName" type="STRING" contents="" />
+              <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+              <CustomizedProperty>
+                <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                  <vrat.ListOfXmlTemplate name="TriggerType" type="CHOICE" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="TriggerType0" type="STRING" contents="InputDown" />
+                  </vrat.ListOfXmlTemplate>
+                  <vrat.PrimitiveXmlTemplate name="KeyName" type="STRING" contents="INPUT2" />
+                </vrat.ListOfXmlTemplate>
+              </CustomizedProperty>
+            </vrat.TriggerPrimitivesTemplate>
+            <vrat.ListOfXmlTemplate name="BeforeActionList" type="ListOfXmlTemplate" idx="0" />
+            <vrat.ListOfXmlTemplate name="AfterActionList" type="ListOfXmlTemplate" idx="0">
+              <vrat.ActionPrimitivesTemplate name="ActiveRenderAction" type="ActionPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE_Hose" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0" />
+                </CustomizedProperty>
+              </vrat.ActionPrimitivesTemplate>
+              <vrat.ActionPrimitivesTemplate name="AttachToCameraAction" type="ActionPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE_Hose" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0" />
+                </CustomizedProperty>
+              </vrat.ActionPrimitivesTemplate>
+              <vrat.ActionPrimitivesTemplate name="DeactiveRenderAction" type="ActionPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0" />
+                </CustomizedProperty>
+              </vrat.ActionPrimitivesTemplate>
+            </vrat.ListOfXmlTemplate>
+            <vrat.ListOfXmlTemplate name="InstructionList" type="ListOfXmlTemplate" idx="0">
+              <vrat.InstPrimitivesTemplate name="Instruction" type="InstPrimitivesTemplate">
+                <PairwiseAsset name="OwnedAssetName" type="STRING" contents="FE" />
+                <PossibleAttachedAssetType name="AttachedAssetType" type="STRING" contents="" />
+                <CustomizedProperty>
+                  <vrat.ListOfXmlTemplate name="PropertiesList" type="ListOfXmlTemplate" idx="0">
+                    <vrat.PrimitiveXmlTemplate name="Instruction" type="STRING" contents="X 버튼을 눌러 소화기를 들어 올리세요." />
+                    <vrat.PrimitiveXmlTemplate name="IsGlobalOrLocal" type="BOOL" contents="True" />
+                  </vrat.ListOfXmlTemplate>
+                </CustomizedProperty>
+              </vrat.InstPrimitivesTemplate>
+            </vrat.ListOfXmlTemplate>
+            <vrat.PrimitiveXmlTemplate name="OwnPlayer" type="string" contents="" />
+          </CustomizedProperty>
+        </EVENT>
+      </EventList>
+    </TIMELINE>
+  </TimelineList>
+</SCENARIO>

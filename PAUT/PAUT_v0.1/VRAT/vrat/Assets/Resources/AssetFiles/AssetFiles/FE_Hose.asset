@@ -1,0 +1,30 @@
+<ASSET name="FE_Hose">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>-1835.783</x>
+        <y>1.014999</y>
+        <z>0.5760002</z>
+      </Position>
+      <Rotation>
+        <x>-1.540408E-06</x>
+        <y>180</y>
+        <z>145</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="InputHoldParam" triggerCondition="11" triggerOperator="0" triggerParamStr="" triggerParamFloat=""  />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="StartParticle" attachedAsset="FE_Effect" actionParamStr="" actionParamTh="" />
+        <ActionElement name="ActionType" type="STRING" actionType="DecreaseFloatVariable" attachedAsset="fire" actionParamStr="life" actionParamTh="10" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="InputUpParam" triggerCondition="12" triggerOperator="0" triggerParamStr="input1" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="StopParticle" attachedAsset="FE_Effect" actionParamStr="" actionParamTh="" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

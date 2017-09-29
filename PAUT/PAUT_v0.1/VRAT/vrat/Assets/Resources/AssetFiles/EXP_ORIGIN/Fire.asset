@@ -1,0 +1,30 @@
+<ASSET name="fire">
+  <CustomizedProperty>
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>1032.563</x>
+        <y>-0.2940655</y>
+        <z>-93</z>
+      </Position>
+      <Rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+    <vrat.VariableXmlTemplate name="HP" type="float" value="500" />
+    <vrat.VariableXmlTemplate name="isDetected" type="bool" value="false" />
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="GazeEnterParam" triggerCondition="0" triggerOperator="0" triggerParamStr="" triggerParamFloat="" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="SetBoolVariable" attachedAsset="fire" actionParamStr="isDetected" actionParamTh="true" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="MonitorFloatVariableParam" triggerCondition="0" triggerOperator="2" triggerParamStr="0" triggerParamFloat="HP" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="DeactiveRender" attachedAsset="fire" actionParamStr="" actionParamTh="" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

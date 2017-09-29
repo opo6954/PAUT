@@ -1,0 +1,17 @@
+<ASSET name="FE_Effect">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>-1835.763</x>
+        <y>-0.1230011</y>
+        <z>-0.0320015</z>
+      </Position>
+      <Rotation>
+        <x>25.50201</x>
+        <y>-5.025285E-07</y>
+        <z>359.184</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

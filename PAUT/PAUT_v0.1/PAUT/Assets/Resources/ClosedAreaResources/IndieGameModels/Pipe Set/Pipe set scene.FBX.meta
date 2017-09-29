@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 69cdda3cbb4e5e34bbaaf4bc6ea7d3f2
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    4300000: Between Pipes V04
+    4300002: Pipe Straight Small02
+    4300004: Between Pipes V05
+    4300006: Pipe Straight Small03
+    4300008: Pipe 90 Small02
+    4300010: Between Pipes V06
+    4300012: Pipe Straight Small04
+    4300014: Pipe Straight Small05
+    4300016: Between Pipes V07
+    4300018: Between Pipes V08
+    4300020: Pipe Ring02
+    4300022: Pipe Straight XSmall02
+    4300024: Valve Wheel02
+    4300026: Pipe End Valve02
+    4300028: Between Pipes V09
+    4300030: Pipe Straight Medium02
+    4300032: Pipe fixation02
+    4300034: Between Pipes V10
+    4300036: Pipe Straight Big02
+    4300038: Pipe fixation03
+    4300040: Pipe fixation04
+    4300042: Pipe fixation05
+    4300044: Pipe fixation06
+    4300046: End Pipes V05
+    4300048: Plane01
+    4300050: Box01
+    4300052: Box02
+    4300054: Valve Wheel03
+    4300056: Pipe End Valve03
+    4300058: Pipe Straight XSmall03
+    4300060: Between Pipes V11
+    4300062: Pipe Straight Small06
+    4300064: Pipe Ring04
+    4300066: Pipe Straight Small07
+    4300068: Between Pipes V12
+    4300070: Pipe 90 Small04
+    4300072: Between Pipes V13
+    4300074: Between Pipes V14
+    4300076: Pipe Straight Small08
+    4300078: Between Pipes V16
+    4300080: Pipe Straight Small09
+    4300082: Pipe Straight Medium03
+    4300084: Between Pipes V18
+    4300086: Between Pipes V19
+    4300088: Pipe Straight Small10
+    4300090: Pipe Straight Small11
+    4300092: Between Pipes V20
+    4300094: Pipe fixation07
+    4300096: Pipe fixation08
+    4300098: Pipe fixation09
+    4300100: Pipe fixation10
+    4300102: Pipe fixation11
+    4300104: Pipe 90 Medium03
+    4300106: Pipe Straight Small12
+    4300108: Between Pipes V21
+    4300110: Between Pipes V22
+    4300112: End Pipes V07
+    4300114: Pipe Straight VSmall02
+    4300116: Pipe Straight Small13
+    4300118: Pipe Straight Small14
+    4300120: Between Pipes V23
+    4300122: Between Pipes V24
+    4300124: Pipe Straight Small15
+    4300126: Pipe 90 Small05
+    4300128: Between Pipes V25
+    4300130: Between Pipes V26
+    4300132: Pipe Straight XSmall05
+    4300134: Between Pipes V27
+    4300136: Pipe Ring05
+    4300138: Box03
+    4300140: Pipe fixation12
+    4300142: Pipe 90 Vsmall01a
+    4300144: End Pipes V08
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

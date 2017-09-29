@@ -1,0 +1,25 @@
+<ASSET name="fire">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="false" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>1034.528</x>
+        <y>-16.71805</y>
+        <z>-93</z>
+      </Position>
+      <Rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+    <vrat.VariableXmlTemplate name="Life" type="float" />
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="" triggerCondition="0" triggerOperator="1" triggerParamStr="p" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="StartParticle" attachedAsset="extinguisher" actionParamStr="" actionParamTh="" />
+        <ActionElement name="ActionType" type="STRING" actionType="StopParticle" attachedAsset="phone" actionParamStr="o" actionParamTh="i" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

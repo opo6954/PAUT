@@ -1,0 +1,17 @@
+<ASSET name="phone">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="false" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>1024.986</x>
+        <y>-35.68761</y>
+        <z>-93</z>
+      </Position>
+      <Rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+  </CustomizedProperty>
+</ASSET>

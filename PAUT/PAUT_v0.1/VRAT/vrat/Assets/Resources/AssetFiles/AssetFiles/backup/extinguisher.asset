@@ -1,0 +1,41 @@
+<ASSET name="extinguisher">
+  <CustomizedProperty>
+    <vrat.PrimitiveXmlTemplate name="IsGraspable" type="bool" contents="True" />
+    <vrat.LocationXmlTemplate name="Location" type="location">
+      <Position>
+        <x>1025.044</x>
+        <y>-16.71805</y>
+        <z>-93</z>
+      </Position>
+      <Rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Rotation>
+    </vrat.LocationXmlTemplate>
+    <vrat.ListOfXmlTemplate name="HoldGestureType" type="ListOfXmlTemplate" idx="0">
+      <vrat.PrimitiveXmlTemplate name="KeyboardButtonDownZ" type="string" contents="z" />
+      <vrat.PrimitiveXmlTemplate name="KeyboardButtonDownX" type="string" contents="x" />
+      <vrat.PrimitiveXmlTemplate name="KeyboardButtonDownC" type="string" contents="c" />
+    </vrat.ListOfXmlTemplate>
+    <vrat.ListOfXmlTemplate name="ExtinguishGestureType" type="ListOfXmlTemplate" idx="1">
+      <vrat.PrimitiveXmlTemplate name="KeyboardButtonDownZ" type="string" contents="z" />
+      <vrat.PrimitiveXmlTemplate name="KeyboardButtonDownX" type="string" contents="x" />
+    </vrat.ListOfXmlTemplate>
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="" triggerCondition="0" triggerOperator="0" triggerParamStr="" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="DeactiveRender" attachedAsset="fire" actionParamStr="1" actionParamTh="2" />
+        <ActionElement name="ActionType" type="STRING" actionType="ActiveRender" attachedAsset="extinguisher" actionParamStr="3" actionParamTh="4" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+    <vrat.AssetTriggerXmlTemplate name="" type="">
+      <TriggerType name="TriggerType" type="STRING" triggerType="" triggerCondition="0" triggerOperator="0" triggerParamStr="" />
+      <ActionList>
+        <ActionElement name="ActionType" type="STRING" actionType="StopParticle" attachedAsset="extinguisher" actionParamStr="5" actionParamTh="6" />
+        <ActionElement name="ActionType" type="STRING" actionType="Create" attachedAsset="extinguisher" actionParamStr="3" actionParamTh="4" />
+        <ActionElement name="ActionType" type="STRING" actionType="Destroy" attachedAsset="extinguisher" actionParamStr="1" actionParamTh="2" />
+      </ActionList>
+    </vrat.AssetTriggerXmlTemplate>
+  </CustomizedProperty>
+</ASSET>
